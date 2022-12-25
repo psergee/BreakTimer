@@ -1,7 +1,7 @@
-#!/bin/sh
+#!/bin/bash
 
 SCRIPT_DIR=`dirname $0`
-source $SCRIPT_DIR/break_timer.cfg
+source $SCRIPT_DIR/break_timer.cfg || exit
 
 waittime=$worktime
 
