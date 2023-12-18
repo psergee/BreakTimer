@@ -1,0 +1,10 @@
+[Unit]
+Description=Break timer
+
+[Service]
+Type=simple
+StandardOutput=journal
+ExecStart=%h/BreakTimer/break_timer.sh
+
+[Install]
+WantedBy=default.target
