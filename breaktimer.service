@@ -4,7 +4,7 @@ Description=Break timer
 [Service]
 Type=simple
 StandardOutput=journal
-ExecStart=%h/BreakTimer/break_timer.sh
+ExecStart=<script>
 
 [Install]
 WantedBy=default.target
