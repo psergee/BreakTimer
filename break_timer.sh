@@ -13,6 +13,7 @@ function enable_systemd() {
     mkdir -p $user_systemd_dir
     cp $SCRIPT_DIR/breaktimer.service $user_systemd_dir
     sed -i "s|<script>|$absolute_dir/$script_name|g" $user_systemd_dir/breaktimer.service
+    sed -i "s|<display>|$DISPLAY|g" $user_systemd_dir/breaktimer.service
     systemctl --user enable breaktimer.service
 }
 

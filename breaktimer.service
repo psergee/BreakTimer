@@ -4,6 +4,7 @@ Description=Break timer
 [Service]
 Type=simple
 StandardOutput=journal
+Environment=DISPLAY=<display>
 ExecStart=<script>
 
 [Install]
